@@ -1,14 +1,7 @@
-
 // import node module libraries
 import { Menu } from 'react-feather';
 import Link from 'next/link';
-import {
-  Nav,
-  Navbar,
-  Form,
-  FormControl,
-  Button
-} from 'react-bootstrap';
+import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 
 // import sub components
 import QuickMenu from 'layouts/QuickMenu';
@@ -28,8 +21,8 @@ const NavbarTop = (props) => {
           <div className="ms-lg-3 d-none d-md-none d-lg-block">
             {/* Search Form */}
             <Form className="d-flex align-items-center">
-              <FormControl type="search" placeholder="Search" className="mr-2" aria-label="Search" />
-              <Form.Control type="text" placeholder="Additional Search" className="mr-2" />
+              <FormControl type="search" placeholder="Search" className="mr-2" />
+              <FormControl type="text" placeholder="Additional Search" className="mr-2" />
               <Button variant="primary">Search</Button>
             </Form>
           </div>
@@ -44,4 +37,3 @@ const NavbarTop = (props) => {
 };
 
 export default NavbarTop;
-
