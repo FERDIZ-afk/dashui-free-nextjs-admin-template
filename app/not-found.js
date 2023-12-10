@@ -20,8 +20,7 @@ const NotFound = () => {
                   <Image src="/images/error/404-error-img.png" alt="" className="img-fluid" />
                 </div>
                 <h1 className="display-4 fw-bold">Oops! the page not found.</h1>
-                <p className="mb-4">Or simply leverage the expertise of our consultation
-                  team.</p>
+                <p className="mb-4">Halaman yang Anda cari mungkin telah dihapus, nama telah diubah, atau sedang tidak tersedia.</p>
                 <Link href="/" className="btn btn-primary">
                   Go Home
                 </Link>
