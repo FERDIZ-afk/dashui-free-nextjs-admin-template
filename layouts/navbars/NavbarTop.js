@@ -16,23 +16,6 @@ const NavbarTop = (props) => {
             onClick={() => props.data.SidebarToggleMenu(!props.data.showMenu)}>
             <Menu size="18px" />
           </Link>
-          <div className="ms-lg-3 d-none d-md-none d-lg-block">
-            {/* Search Form for Desktop */}
-            <div className="search-bar">
-              <Form className="search-form d-flex align-items-center" method="POST" action="/search">
-                <FormControl type="text" name="query" placeholder="Search" title="Enter search keyword" />
-                <Button type="submit" title="Search">
-                  <Search size="18px" />
-                </Button>
-              </Form>
-            </div>
-          </div>
-        </div>
-        {/* Quick Menu */}
-        <Nav className="navbar-right-wrap ms-2 d-flex nav-top-wrap">
-          <QuickMenu />
-        </Nav>
-      </div>
       {/* Search Form for Mobile */}
       <div className="ms-lg-3 d-lg-none">
         <div className="search-bar">
@@ -43,6 +26,12 @@ const NavbarTop = (props) => {
             </Button>
           </Form>
         </div>
+      </div>
+        </div>
+        {/* Quick Menu */}
+        <Nav className="navbar-right-wrap ms-2 d-flex nav-top-wrap">
+          <QuickMenu />
+        </Nav>
       </div>
     </Navbar>
   );
