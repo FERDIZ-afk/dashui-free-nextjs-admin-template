@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Menu, Search } from 'react-feather';
 import Link from 'next/link';
-import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
-import { Toast } from 'react-bootstrap';
+import { Nav, Navbar, Form, FormControl, Button, Toast } from 'react-bootstrap';
 
 import QuickMenu from 'layouts/QuickMenu';
 
@@ -57,8 +56,9 @@ const NavbarTop = (props) => {
                 title="Enter search keyword"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                className="me-2"  // Add spacing to the input
               />
-              <Button type="submit" title="Search">
+              <Button type="submit" title="Search" size="sm"> {/* Set button size to sm */}
                 <Search size="18px" />
               </Button>
             </Form>
@@ -73,8 +73,9 @@ const NavbarTop = (props) => {
                 title="Enter search keyword"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                className="me-2"  // Add spacing to the input
               />
-              <Button type="submit" title="Search">
+              <Button type="submit" title="Search" size="sm"> {/* Set button size to sm */}
                 <Search size="18px" />
               </Button>
             </Form>
